@@ -248,6 +248,13 @@
   anchorLink('a[href="/#actual"]', '#actual');
   anchorLink('a[href="/#news"]', '#news');
   anchorLink('a[href="/#entertainment"]', '#entertainment');
+
+  // Check contact item's icon
+  $('.contact-text').each(function () {
+    if ($(this).is(':empty')){
+      $(this).closest('.contact-item').hide();
+    }
+  });
 })(jQuery);
 
 var $ticker = $('[data-ticker="list"]'),

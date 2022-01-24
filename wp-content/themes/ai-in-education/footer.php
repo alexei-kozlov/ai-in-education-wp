@@ -15,13 +15,13 @@
         <div class="col-10 col-sm-7 col-md-6 col-lg-4 mt-10 mb-10">
           <ul class="footer-info-list">
             <li class="footer-info-item">
-              <p class="font-16 mb-10"><?php the_field('business-name'); ?></p>
+              <p class="font-16 mb-10"><?php the_field('business-name', 29); ?></p>
             </li>
             <li class="footer-info-item">
-              <p class="font-16 mb-10"><?php the_field('individual-identification-number'); ?></p>
+              <p class="font-16 mb-10"><?php the_field('individual-identification-number', 29); ?></p>
             </li>
             <li class="footer-info-item">
-              <p class="font-16"><?php the_field('state-registration-number'); ?></p>
+              <p class="font-16"><?php the_field('state-registration-number', 29); ?></p>
             </li>
           </ul>
         </div>
@@ -29,10 +29,16 @@
           <div class="footer-item footer-contact black-color">
             <h3 class="black-color font-weight-bold font-20 pb-0 mb-5" id="contacts">Контакты</h3>
             <ul>
-              <li>
-                <a href="mailto:mail@quality-edu.ru">
-                  <i class="fas fa-envelope"></i>
-                    <?php the_field('e-mail'); ?>
+              <li class="contact-item">
+                <a href="mailto:<?php the_field('e-mail', 29); ?>">
+                  <i class="contact-icon fas fa-envelope"></i>
+                  <span class="contact-text"><?php the_field('e-mail', 29); ?></span>
+                </a>
+              </li>
+              <li class="contact-item">
+                <a href="tel:<?php the_field('phone-number', 29); ?>">
+                  <i class="contact-icon fas fa-phone"></i>
+                  <span class="contact-text"><?php the_field('phone-number', 29); ?></span>
                 </a>
               </li>
             </ul>
@@ -45,7 +51,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-7 col-lg-6">
-          <span class="black-color"><?php the_field('copyright'); ?></span>
+          <span class="black-color">&copy;<?php echo date('Y'); ?>. Все права защищены.</span>
         </div>
       </div>
     </div>
@@ -59,21 +65,21 @@
 </a>
 
 <!-- Jquery File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-3.5.0.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/jquery-3.5.0.min.js"></script>
 <!-- Modernizr JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/modernizr.custom.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/modernizr.custom.js"></script>
 <!-- meanmenu.min JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/mmenu-light.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/mmenu-light.js"></script>
 <!-- Popper JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/popper.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/popper.min.js"></script>
 <!-- Bootstrap JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
 <!-- Magnific popup JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/jquery.magnific-popup.min.js"></script>
 <!-- slick JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/slick.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/slick.min.js"></script>
 <!-- Main JS File -->
-<script src="<?php bloginfo( 'template_directory' ) ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/script.js"></script>
 
 <?php wp_footer(); ?>
 
