@@ -245,16 +245,9 @@
     });
   }
   // Call Functions anchorLink
-  anchorLink('a[href="/#actual"]', '#actual');
-  anchorLink('a[href="/#news"]', '#news');
-  anchorLink('a[href="/#entertainment"]', '#entertainment');
-
-  // Check contact item's icon
-  $('.contact-text').each(function () {
-    if ($(this).is(':empty')){
-      $(this).closest('.contact-item').hide();
-    }
-  });
+  anchorLink('a[href="/#aktualnoe"]', '#aktualnoe');
+  anchorLink('a[href="/#novosti"]', '#novosti');
+  anchorLink('a[href="/#meropriyatiya"]', '#meropriyatiya');
 })(jQuery);
 
 var $ticker = $('[data-ticker="list"]'),

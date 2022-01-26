@@ -27,20 +27,30 @@
         </div>
         <div class="col-10 col-sm-5 col-md-6 col-lg-4">
           <div class="footer-item footer-contact black-color">
-            <h3 class="black-color font-weight-bold font-20 pb-0 mb-5" id="contacts">Контакты</h3>
+            <h3 class="black-color font-weight-bold font-20 pb-0 mb-5" id="kontakti">Контакты</h3>
             <ul>
-              <li class="contact-item">
-                <a href="mailto:<?php the_field('e-mail', 29); ?>">
-                  <i class="contact-icon fas fa-envelope"></i>
-                  <span class="contact-text"><?php the_field('e-mail', 29); ?></span>
-                </a>
-              </li>
-              <li class="contact-item">
-                <a href="tel:<?php the_field('phone-number', 29); ?>">
-                  <i class="contact-icon fas fa-phone"></i>
-                  <span class="contact-text"><?php the_field('phone-number', 29); ?></span>
-                </a>
-              </li>
+              <?php $email = get_field('e-mail', 29);
+              if (!empty($email)) : ?>
+                <li class="contact-item">
+                  <a href="mailto:<?php echo $email; ?>">
+                    <i class="contact-icon fas fa-envelope"></i>
+                    <span class="contact-text">
+                      <?php echo $email; ?>
+                    </span>
+                  </a>
+                </li>
+              <?php endif; ?>
+              <?php $phone_number = get_field('phone-number', 29);
+              if (!empty($phone_number)) : ?>
+                <li class="contact-item">
+                  <a href="tel:<?php echo $phone_number; ?>">
+                    <i class="contact-icon fas fa-phone"></i>
+                    <span class="contact-text">
+                      <?php echo $phone_number; ?>
+                    </span>
+                  </a>
+                </li>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
@@ -51,7 +61,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-7 col-lg-6">
-          <span class="black-color">&copy;<?php echo date('Y'); ?>. Все права защищены.</span>
+          <span class="black-color">&copy; <?php echo date('Y'); ?>. Все права защищены.</span>
         </div>
       </div>
     </div>
