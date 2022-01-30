@@ -10,7 +10,7 @@
   <!-- Main Area Start -->
   <main>
     <h1 class="visually-hidden"><?php the_title(); ?></h1>
-    <section class="blog-standard-area section-padding bg-white-100">
+    <article class="blog-standard-area section-padding bg-white-100">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 bg-white">
@@ -65,7 +65,7 @@
           <?php get_sidebar(); ?>
         </div>
       </div>
-    </section>
+    </article>
   </main>
   <!-- Main Area End -->
 

@@ -211,61 +211,6 @@
                           </div>
                         </div>
                       <?php endforeach; ?>
-
-                    <!--<div class="row mx-0 pt-10 pt-md-0 h-100 h-md-50">
-                      <div class="block-module">
-                        <a class="news-link"
-                           href="novosti/nikitin-nizhegorodskaya-oblast-priznanniy-centr-innovacionnogo-i-tehnologicheskogo-razvitiya.html">
-                          <div class="block-img overlay-indego-black">
-                            <img src="uploads/news/news-2.jpg" alt="Фото новости">
-                          </div>
-                          <div class="block-grid-content-2">
-                            <h3 class="white-color font-16">
-                              Никитин: «Нижегородская область — признанный центр инновационного и технологического
-                              развития»
-                            </h3>
-                            <div class="block-meta d-flex justify-content-between">
-                              <div class="block-meta-info white-color">
-                                <ul>
-                                  <li>
-                                <span><i class="far fa-clock"></i>
-                                  20 декабря 2021
-                                </span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mx-0 pt-10 pt-md-8 h-100 h-md-50">
-                      <div class="block-module">
-                        <a class="news-link"
-                           href="novosti/minprosvescheniya-i-mincifri-opredelili-kak-sleduet-osnaschat-shkoli-uchastvuyuschie-v-eksperimentalnom-vnedrenii-cos.html">
-                          <div class="block-img overlay-indego-black">
-                            <img src="uploads/news/news-3.jpg" alt="Фото новости">
-                          </div>
-                          <div class="block-grid-content-2">
-                            <h3 class="white-color font-16">
-                              Минпросвещения и Минцифры определили, как следует оснащать школы, участвующие в
-                              экспериментальном внедрении ЦОС
-                            </h3>
-                            <div class="block-meta d-flex justify-content-between">
-                              <div class="block-meta-info white-color">
-                                <ul>
-                                  <li>
-                                <span><i class="far fa-clock"></i>
-                                  17 декабря 2021
-                                </span>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>-->
                   </div>
                 </div>
               </div>

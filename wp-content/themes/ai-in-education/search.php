@@ -1,53 +1,39 @@
-<?php
-/**
+<?php /**
  * The template for displaying search results pages
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @package AI_in_Education
- */
+ */ ?>
+<?php get_header(); ?>
 
-get_header();
-?>
+  <main id="primary" class="site-main">
+    <section class="search-results-list blog-standard-area section-padding bg-white-100">
+      <div class="container">
+        <?php if (have_posts()) : ?>
+          <h1 class="search-title">
+            <?php
+            /* translators: %s: search query. */
+            printf(esc_html__('Вы искали: "%s"', 'ai-in-education'), '<span>' . get_search_query() . '</span>');
+            ?>
+          </h1>
+          <div class="row">
+            <div class="col-lg-8">
+              <?php while (have_posts()) : the_post();
 
-	<main id="primary" class="site-main">
+                get_template_part('template-parts/content', 'search');
 
-		<?php if ( have_posts() ) : ?>
+              endwhile; ?>
+            </div>
+            <?php get_sidebar(); ?>
+          </div>
+        <?php else :
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'ai-in-education' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+          get_template_part('template-parts/content', 'none');
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+        endif; ?>
+      </div>
+    </section>
+  </main><!-- #main -->
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

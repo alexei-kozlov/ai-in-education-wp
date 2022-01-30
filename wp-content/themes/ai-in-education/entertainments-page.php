@@ -1,10 +1,6 @@
-<?php
-/**
- *
+<?php /**
  * Template Name: Страница мероприятий
- *
- */
-?>
+ */ ?>
 <?php get_header(); ?>
 
   <!-- Main Area Start -->
@@ -14,7 +10,7 @@
       <div class="container">
         <div class="row">
           <div class="entertainments col-lg-8">
-            <!-- Block Widget Start -->
+            <!-- Block "All Entertainments" Start -->
             <div class="block-widget">
               <div class="block-widget-title">
                 <h2 class="black-color"><?php the_title(); ?></h2>
@@ -67,7 +63,7 @@
                 <?php endforeach; ?>
               </ul>
             </div>
-            <!-- Block Widget End -->
+            <!-- Block "All Entertainments" End -->
           </div>
           <?php get_sidebar(); ?>
         </div>

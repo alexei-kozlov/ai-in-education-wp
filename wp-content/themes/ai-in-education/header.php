@@ -9,7 +9,7 @@
         content="Искусственный интеллект, ИИ, информационные технологии, образование, роботы, конференция">
   <meta name="description"
         content="Новостной сайт об информационных технологиях в сфере образования и внедрении искусственного интеллекта в образовательный процесс">
-    <?php wp_head(); ?>
+  <?php wp_head(); ?>
   <link rel="icon" href="<?php bloginfo('template_directory') ?>/img/favicon.ico"/>
   <title>Искусственный интеллект в образовании - Новостной сайт об ИИ в сфере образования</title>
 
@@ -69,19 +69,19 @@
             <span></span>
           </a>
           <nav class="menu-3 text-right black-color font-20" id="menu">
-              <?php
-              $args = array(
-                  'menu'            => 'Main',
-                  'menu_class'      => 'nav-list',
-                  'container'       => 'ul',
-                  'container_class' => 'nav__list',
-                  'fallback_cb'     => 'wp_page_menu',
-                  'echo'            => 'true',
-                  'depth'           => '0',
-                  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-              );
-              wp_nav_menu( $args );
-              ?>
+            <?php
+            $args = array(
+                'menu' => 'Main',
+                'menu_class' => 'nav-list',
+                'container' => 'ul',
+                'container_class' => 'nav__list',
+                'fallback_cb' => 'wp_page_menu',
+                'echo' => 'true',
+                'depth' => '0',
+                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            );
+            wp_nav_menu($args);
+            ?>
           </nav>
         </div>
         <!-- Menu Area End -->
