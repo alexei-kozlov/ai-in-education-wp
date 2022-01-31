@@ -11,10 +11,8 @@
 
   <?php if ('post' === get_post_type()) : ?>
     <div class="entry-meta">
-      <?php
-      ai_in_education_posted_on();
-      // ai_in_education_posted_by();
-      ?>
+      <?php ai_in_education_posted_on(); ?>
+      <p>Категория: &laquo;<?php the_category('&raquo;, &laquo;'); ?>&raquo;</p>
     </div><!-- .entry-meta -->
   <?php endif; ?>
 
@@ -25,6 +23,6 @@
   </div><!-- .entry-summary -->
 
   <footer class="entry-footer">
-    <?php ai_in_education_entry_footer(); ?>
+    <a class="entry-footer-link" href="<?php the_permalink(); ?> '" rel="bookmark">Читать полностью</a>
   </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

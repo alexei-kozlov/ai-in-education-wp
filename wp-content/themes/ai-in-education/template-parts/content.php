@@ -33,6 +33,6 @@
   </div><!-- .entry-summary -->
 
   <footer class="entry-footer">
-    <a href="<?php the_permalink(); ?> '" rel="bookmark">Читать далее</a>
+    <a class="entry-footer-link" href="<?php the_permalink(); ?> '" rel="bookmark">Читать полностью</a>
   </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

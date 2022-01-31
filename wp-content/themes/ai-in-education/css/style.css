@@ -6741,12 +6741,38 @@ ul.breadcrumb li a:focus {
 }
 
 .search-results-list .entry-footer {
-  border: solid #437FEC;
-  border-width: 1px 0 1px 0;
+  text-align: right;
+}
+
+.search-results-list .entry-footer-link {
+  color: #6A6A6A;
   font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 16px;
+}
+
+.search-results-list .entry-footer-link:hover,
+.search-results-list .entry-footer-link:focus {
+  color: #437FEC;
+}
+
+.search-results-list .entry-footer-link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0.6rem;
+  background: #437FEC;
+  transition: 0.3s ease-out;
+}
+
+.search-results-list .entry-footer-link:focus::before,
+.search-results-list .entry-footer-link:hover::before {
+  width: 100%;
+  height: 2px;
+  transition: 0.3s ease-out;
 }
 
 @media screen and (max-width: 475px) {
