@@ -13,8 +13,7 @@
         <?php if (have_posts()) : ?>
           <h1 class="search-title">
             <?php
-            /* translators: %s: search query. */
-            printf(esc_html__('Вы искали: "%s"', 'ai-in-education'), '<span>' . get_search_query() . '</span>');
+            printf(esc_html__('Вы искали: &laquo;%s&raquo;', 'ai-in-education'), '<span>' . get_search_query() . '</span>');
             ?>
           </h1>
           <div class="row">

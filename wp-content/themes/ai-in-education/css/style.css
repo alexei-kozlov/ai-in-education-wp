@@ -6708,8 +6708,19 @@ ul.breadcrumb li a:focus {
 /*-------------------------------------*/
 .search-results-list .search-title {
   font-size: 25px;
-  text-decoration: underline;
   margin-bottom: 30px;
+}
+
+.search-results-list .search-title span {
+  text-decoration: underline;
+}
+
+.search-results-list .search-title span::before {
+  content: '«';
+}
+
+.search-results-list .search-title span::after {
+  content: '»';
 }
 
 .search-results-list .entry-title {
